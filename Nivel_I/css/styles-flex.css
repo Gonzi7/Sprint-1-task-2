@@ -1,0 +1,215 @@
+.body {
+    background-color: aliceblue;
+
+}
+
+.flex-container {
+    max-width: 1200px;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.top-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border: 5px solid white;
+    background-color: black;
+    color: black;
+    padding: 10px;
+    width: auto;
+    height: 130px;
+    line-height: 120px;
+}
+
+.first-box {
+    display: flex;
+    border: 5px solid black;
+    background-color: #2D4159FF;
+    align-items: center;
+    width: auto;
+    height: 50px;
+}
+
+.sub-box.small-1 {
+    border: 5px solid #2D4159FF;
+    background-color: #EA5556FF;
+    margin: 10px;
+    height: 20px;
+    width: 20%;
+}
+
+.sub-box.large-1 {
+    border: 5px solid #2D4159FF;
+    background-color: #EA5556FF;
+    margin: 10px;
+    height: 20px;
+    width: 60%;
+}
+
+.sub-box.small-2 {
+    border: 5px solid #2D4159FF;
+    background-color: #EA5556FF;
+    margin: 10px;
+    height: 20px;
+    width: 20%;
+}
+
+.second-box {
+    border: 5px solid black;
+    background-color: #F07B3FFF;
+    width: auto;
+    height: 50px;
+}
+
+.sub-box.fullwidth {
+    border: 15px solid #F07B3FFF;
+    background-color: #FED460FF;
+    width: auto;
+    height: 20px;
+}
+
+.middle-box {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 5px solid white;
+    background-color: black;
+    color: black;
+    width: auto;
+    height: 170px;
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: space-between;   
+    border: 5px solid black;
+    background-color: #4E4E6Aff;
+}
+
+.small-boxes-container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #4E4E6Aff;
+    height: 100px;
+    align-content: space-between;
+}
+
+.small-box {
+    border: 5px solid #4E4E6Aff; 
+    background-color: #206CB0ff;
+    height: 20px;
+    width: 40%;
+    margin: 10px;
+}
+
+.large-box {
+    border: 5px solid #4E4E6Aff; 
+    background-color: #70A3C4ff;
+    height: 20px;
+    margin: 10px;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 5px solid black;
+    background-color: #F73E51ff;
+}
+
+.rigth-sub-box {
+    border: 5px solid #F73E51ff; 
+    background-color: #FEEA84ff;
+    height: 20px;
+    margin: 10px;
+    margin-bottom: 0%;
+    
+}
+
+.bottom-box {
+    border: 5px solid white;
+    background-color: black;
+    color: black;
+    width: auto;
+    height: 50px;
+}
+
+.fullwidthbox {
+    border: 15px solid black;
+    background-color: #E5AF2DFF;
+    width: auto;
+    height: 20px;
+}
+
+
+/* Media Query for Tablets */
+@media only screen and (max-width: 1024px) {
+    .middle-box, .bottom-box {
+        flex-direction: column;
+    }
+    .middle-box{
+        background-color: #FEFF05ff;
+    }
+    .left-box {
+        border: 5px solid #FEFF05ff;
+    }
+    .right-box{
+        border: 5px solid #FEFF05ff;
+    }
+
+}
+
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 600px) {
+    .top-box, .middle-box, .bottom-box {
+        flex-direction: column;
+    }
+    .first-box {
+        flex-direction: column;
+    }
+    .middle-box{
+        background-color: #FEE228ff
+    }
+    .sub-box, .small-box, .large-box, .rigth-sub-box {
+        width: auto; 
+        margin: 5px 0; 
+    }
+    .small-boxes-container, .right-box { 
+        flex-direction: row;
+        justify-content: center;
+    }
+    .left-box {
+        border: 5px solid #FEE228ff;
+        background-color: #0A506Fff;
+    }
+    .small-boxes-container {
+        background-color: #0A506Fff;
+        flex-flow: row wrap;
+    }
+    .small-box {
+        border: 5px solid #0A506Fff; 
+        background-color: #61959Cff;
+    }
+    .large-box {
+        border: 5px solid #0A506Fff; 
+        background-color: #A3DDCBff;
+    }
+    .right-box {
+        border: 5px solid #FEE228ff;
+        background-color: #FC7B54ff;
+    }
+    .rigth-sub-box {
+        border: 5px solid #FC7B54ff;
+        background-color: #FDB36Bff;
+    }
+    
+}
